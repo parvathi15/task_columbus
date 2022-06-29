@@ -71,6 +71,16 @@ body {
   z-index: 1;
 }
 
+.clearcart {
+  font-weight: 600;
+  font-size: 18px;
+  color:#222529;
+  float: right;
+  border-radius: .25rem;
+  cursor: pointer;
+  border: 1px solid #222529;
+  padding: .375rem .75rem;
+}
 
 
 
@@ -221,6 +231,14 @@ cursor: pointer;
     height:80px;
 }
 
+.clearcart {
+  font-weight: 600;
+  font-size: 18px;
+  color:#222529;
+  float: left;
+  cursor: pointer;
+}
+
  }
 
 
@@ -231,6 +249,13 @@ cursor: pointer;
     width: 200px;
     background:white;
     height:auto;
+}
+.clearcart {
+  font-weight: 600;
+  font-size: 18px;
+  color:#222529;
+  float: left;
+  cursor: pointer;
 }
 
 }
@@ -253,6 +278,13 @@ cursor: pointer;
     background: white;
     height:auto;
 }
+.clearcart {
+  font-weight: 600;
+  font-size: 18px;
+  color:#222529;
+  float: left;
+  cursor: pointer;
+}
 
 }
 
@@ -265,6 +297,13 @@ cursor: pointer;
     width: 100%;
     background: white;
    
+}
+.clearcart {
+  font-weight: 600;
+  font-size: 18px;
+  color:#222529;
+  float: right;
+  cursor: pointer;
 }
 }
 
@@ -288,6 +327,13 @@ cursor: pointer;
     width: 100%;
     background: white;
 }
+.clearcart {
+  font-weight: 600;
+  font-size: 18px;
+  color:#222529;
+  float: right;
+  cursor: pointer;
+}
 
 }
 
@@ -304,6 +350,15 @@ cursor: pointer;
     flex:0 0 calc(25% - 20px);
     margin-bottom: 0 auto;
     margin-bottom: 60px;
+  }
+
+  .clearcart {
+    font-weight: 600;
+    font-size: 18px;
+    color:#222529;
+    float: right;
+    cursor: pointer;
+    margin-right: 56px;
   }
 
 }

@@ -6,7 +6,7 @@ export default function Cart(props) {
 return (
 <ProductConsumer>
 {value=>{
-    const {cart,total}=value;
+    const {cart,total,clearcart}=value;
     return(
       <div className="cart-page container">
       {cart.length===0 ?
@@ -31,8 +31,7 @@ return (
       <button onClick={() => value.decreaseItem(product.id)} className="btn btn-outline-secondary btn-sm ml-2">-</button>
       </div>
       <div class="col-md-2  mt-2 mb-2">
-      <button onClick={() => {value.deleteItem(product.id)}}className="btn btn-danger">
-     <i className="fa fa-trash"></i></button>
+      <p style = {{color:"crimson"}}onClick={() => {value.deleteItem(product.id)}}>Remove</p>
       </div>
       <div class="col-md-2  mt-2 mb-2">
       <b>{product.price*product.count} SEK</b>
@@ -40,6 +39,9 @@ return (
     </div>
     )
  })}
+
+ <p className='clearcart mt-4'>Clear Cart</p>
+
 </div>
 
 
@@ -50,7 +52,7 @@ return (
 <div className="text-center mt-3">
 <p style = {{fontSize:"23px"}}>Subtotal {cart.length} items</p>
 <h3><span>Total:</span>{total} SEK</h3>
-
+<button type="button" class="btn btn-outline-light mt-2">Proceed to Checkout</button>
 </div>
 </div>
 </div> 

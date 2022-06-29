@@ -37,6 +37,15 @@ else{
  }
 }
 
+clearcart=()=>{
+    const {cart}=this.state;
+    this.setState({
+        cart:[]
+    })
+    cart.forEach((item, index)=>{
+    item.isInCart=false
+    })
+}
 
 
 // delete functionality
@@ -108,7 +117,8 @@ this.setState({
             addToCart:this.addToCart,
             deleteItem:this.deleteItem,
             increaseItem:this.increaseItem,
-            decreaseItem:this.decreaseItem
+            decreaseItem:this.decreaseItem,
+            clearcart:this.clearcart
 
            }}>
                {this.props.children}
