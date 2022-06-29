@@ -32,7 +32,7 @@ return (
    </div>
     <div className="details">
     <h3>{title}</h3>
-    <p>{price}SEK</p>
+    <p>{price} SEK</p>
 
     <div className="cartBtn">
   <button onClick={() => {addToCart(id)}} className={isInCart ?'disabled mb-3':'add_to_button mb-3'}>{isInCart?"In cart ":"Add to cart"}</button>
