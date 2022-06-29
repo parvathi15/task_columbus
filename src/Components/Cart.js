@@ -40,7 +40,7 @@ return (
     )
  })}
 
- <p className='clearcart mt-4'>Clear Cart</p>
+ <p className='clearcart mt-4' onClick={() =>clearcart()}clearcart>Clear Cart</p>
 
 </div>
 
